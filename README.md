@@ -16,11 +16,11 @@ The **Task Tracking Project** backend provides APIs for managing tasks efficient
 
 ---
 
-## Technologies Used
+## Technologies On I Worked
 
-- **Backend**: (Mention your backend technology, e.g., Node.js, Spring Boot, etc.)
-- **Database**: (Mention the database used, e.g., MongoDB, MySQL, etc.)
-- **Authentication**: (Mention if you're using any authentication methods, e.g., JWT)
+- **Backend**: (Java, Spring Boot, Spring JPA, Maven, Docker)
+- **Database**: (PostgreSQL, H2 Database(Test))
+- **Authentication**: (JWT)
 
 ---
 
@@ -56,15 +56,7 @@ The **Task Tracking Project** backend provides APIs for managing tasks efficient
 - **Description**:  Delete a task by ID.
 - **Request Body**: Success message.
 
-## Getting Started
-Prerequisites:
-To run the backend locally, you need the following tools installed:
-
-- Node.js (if using Node.js)
-
-MySQL or any other database (if applicable)
-
-Installation
+## Installation
 Clone the repository:
 
 ```bash
