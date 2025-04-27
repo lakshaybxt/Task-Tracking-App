@@ -57,10 +57,10 @@ The **Task Tracking Project** backend provides APIs for managing tasks efficient
 - **Request Body**: Success message.
 
 ## Getting Started
-    Prerequisites
-    To run the backend locally, you need the following tools installed:
+Prerequisites:
+To run the backend locally, you need the following tools installed:
 
-    - Node.js (if using Node.js)
+- Node.js (if using Node.js)
 
 MySQL or any other database (if applicable)
 
@@ -71,19 +71,19 @@ Clone the repository:
 
 git clone https://github.com/yourusername/task-tracking-backend.git
 ```
-    Navigate to the project directory:
+Navigate to the project directory:
 
 ```bash
 
 cd task-tracking-backend
 ```
-    Install dependencies (if applicable):
+Install dependencies (if applicable):
 
 ```bash
 
 npm install
 ```
-    Set up the database (if applicable):
+Set up the database (if applicable):
 
 ### Create a database named task_tracker (or your chosen name).
 
