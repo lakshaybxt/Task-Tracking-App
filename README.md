@@ -71,10 +71,6 @@ cd task-tracking-backend
 ```
 Install dependencies: Lombok
 
-```bash
-
-npm install
-```
 Set up the database:
 
 ### Create a database named task_tracker (or your chosen name).
