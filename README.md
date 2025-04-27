@@ -95,4 +95,6 @@ npm install
 
 npm run dev
 ```
-    Open the backend in your web browser or Postman to interact with the API."
+Open the backend in your web browser or Postman to interact with the API."
+
+©2025 lakshay. All rights reserved.
