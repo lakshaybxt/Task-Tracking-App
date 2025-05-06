@@ -1,88 +1,57 @@
-# 📝 Task Tracking Project (Backend)
+# Task Manager Backend 🚀
 
-## Overview
+This project is the backend part of a Task Manager application built with **Spring Boot**, **PostgreSQL**, and **Docker**. The application allows users to manage task lists and individual tasks, including creating, updating, deleting, and viewing tasks.
 
-The **Task Tracking Project** backend provides APIs for managing tasks efficiently. This backend allows users to create, update, delete, and categorize tasks based on priority, deadlines, and completion status. It aims to provide a seamless experience for managing tasks through a simple and effective API.
+## Features ✨
 
----
+- **Task Lists** 📋: Create, update, delete, and retrieve task lists.
+- **Tasks** ✅: Manage tasks with details like title, description, priority, and status.
+- **Error Handling** ⚠️: Global exception handling to return meaningful error responses.
+- **Database** 🗄️: Uses **PostgreSQL** for data storage.
+- **DTOs & Mappers** 🔄: Data Transfer Objects (DTOs) for API responses and request handling. Custom mappers for conversion between entities and DTOs.
 
-## Features
+## Tech Stack 💻
 
-- **Create Tasks**: Add new tasks with details such as title, description, priority, and deadline.
-- **Update Tasks**: Edit task details, including marking tasks as completed or changing the priority.
-- **Delete Tasks**: Remove tasks that are no longer relevant.
-- **Categorization**: Categorize tasks into different sections like "To Do," "In Progress," and "Completed."
-- **Task Filtering**: Filter tasks based on priority, deadline, or status to quickly find specific tasks.
+- **Spring Boot**: Java-based framework for building the backend.
+- **PostgreSQL**: Relational database for storing task lists and tasks.
+- **Docker**: For containerization of the application.
+- **Maven**: Dependency management and build tool.
+- **Lombok**: Java library to reduce boilerplate code (e.g., getters, setters).
 
----
+## Project Structure 🏗️
 
-## Technologies On I Worked
+- **Controllers**: Handle HTTP requests and responses.
+  - `TaskController`: Manages tasks in a task list.
+  - `TaskListController`: Manages task lists.
+  - `GlobalExceptionHandler`: Handles global exceptions for error responses.
 
-- **Backend**: (Java, Spring Boot, Spring JPA, Maven, Docker)
-- **Database**: (PostgreSQL, H2 Database(Test))
-- **Authentication**: (JWT)
+- **Services**: Contains business logic.
+  - `TaskService`: Handles task operations.
+  - `TaskListService`: Handles task list operations.
 
----
+- **Repositories**: Interact with the database using Spring Data JPA.
+  - `TaskRepository`: CRUD operations for tasks.
+  - `TaskListRepository`: CRUD operations for task lists.
 
-## API Documentation
+- **DTOs**: Data Transfer Objects for tasks and task lists.
+  - `TaskDto`: Represents task data.
+  - `TaskListDto`: Represents task list data.
+  - `ErrorResponse`: Represents error details in case of failure.
 
-### **GET /tasks**
-- **Description**: Fetch all tasks.
-- **Response**: A list of all tasks.
+- **Mappers**: Convert between entities and DTOs.
+  - `TaskMapper`: Maps task entities to DTOs and vice versa.
+  - `TaskListMapper`: Maps task list entities to DTOs and vice versa.
 
-### **POST /tasks**
-- **Description**: Create a new task.
-- **Request Body**:
-   ```json
-   {
-     "title": "Task title",
-     "description": "Task description",
-     "priority": "low",
-     "deadline": "2025-05-01"
-   }
-    Response: Newly created task object.
+## Installation 🛠️
 
-### **PUT /tasks/{id}**
-- **Description**:  Update a task by ID.
-- **Request Body**:
-   ```json
-    {
-    "title": "Updated title",
-    "status": "Completed"
-    }
-    Response: Updated task object.
-
-### **DELETE /tasks/{id}**
-- **Description**:  Delete a task by ID.
-- **Request Body**: Success message.
-
-## Installation
-Clone the repository:
+1. Clone the repository:
 
 ```bash
-
-git clone https://github.com/yourusername/task-tracking-backend.git
+git clone https://github.com/yourusername/task-manager-backend.git
 ```
-Navigate to the project directory:
+
+2. Navigate to the project directory:
 
 ```bash
-
-cd task-tracking-backend
+cd task-manager-backend
 ```
-Install dependencies: Lombok
-
-Set up the database:
-
-### Create a database named task_tracker (or your chosen name).
-
-### Run the SQL script to set up tables (if applicable).
-
-### Start the development server:
-
-```bash
-
-npm run dev
-```
-Open the backend in your web browser or Postman to interact with the API."
-
-©2025 lakshay. All rights reserved.
